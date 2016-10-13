@@ -1,0 +1,34 @@
+body {
+	background-color: #000000;
+	color: orange;
+	font-family: 'Tempus Sans ITC', sans-serif;
+}
+
+header {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.halloween {
+	padding-left: 385px;
+	clear: both;
+}
+
+.hangman {
+	padding-left: 385px;
+	clear: both;
+}
+
+.content {	
+	padding-left: 325px;
+	float: left;
+	width: 50%;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Halloween Hangman</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div class = "container">
+	<header>
+		<div class = "halloween">
+			<img src="assets/images/halloween.jpg" alt="Halloween" width="200" height="200">
+		</div>
+		<div class = "hangman">
+			<img src="assets/images/hangman.jpg" alt="Hangman" width="200">
+		</div>
+	</header>
+</div>
+
+<div class="container">
+		<section class="content">
+				<h2 id="stats"></h2>
+				<h2 id="press"></h2>
+				<h2 id="right"></h2>
+				<h2 id="wrong"></h2>
+				<h2 id="remaining"></h2>
+		</section>
+</div>
+
+<script src="assets/javascript/game.js"></script>
+<script type="text/javascript">
+player.displayStats();
+document.getElementById("right").innerHTML = ("Word to guess: " + storeRight.join(" "));
+document.getElementById("wrong").innerHTML = ("Letters already guessed: " + storeWrong.join(" "));
+document.getElementById("remaining").innerHTML = ("Number of guesses left: " + chances);
+
+// DEBUG ONLY!!!
+console.log("New word: " + computerGuess);
+console.log("Press any key to play!");
+document.getElementById("press").innerHTML = "Press any key to play!";
+
+// First playthrough to start
+document.onkeyup = function(event) {
+	document.getElementById("press").innerHTML = "Pick a letter!";
+	startGame();
+}
+
+</script>
+</body>
+</html>
