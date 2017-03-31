@@ -1,2 +1,8 @@
 # week-3-game
-Hangman 
+
+<p>Hangman with Javascript</p>
+
+Instructions:
+<ul>
+<li>open using browser index.html</li>
+</ul>
